@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
+body {
+	background: #353535;
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+	color: white;
+
+}
+
+.social-icons a {
+	color: white;
+	font-size: 20px; /* Adjust the font size as desired */
+	margin-right: 10px; /* Adjust the spacing as desired */
+
+
+  }
+
+  /* CSS for centered footer */
+  .centered-footer {
+	text-align: center;
+	margin-top: 20px;
+  }
