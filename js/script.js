@@ -21,3 +21,21 @@
           .catch(error => console.log('Error:', error));
       })
       .catch(error => console.log('Error:', error));
+
+     // Copy IP Address Button Function
+      const copyIPButton = document.getElementById('copy-ip-button');
+      const ipAddressElement = document.getElementById('ip-address');
+  
+      copyIPButton.addEventListener('click', () => {
+        const ipAddress = ipAddressElement.innerText;
+  
+        navigator.clipboard.writeText(ipAddress)
+          .then(() => {
+            alert('IP address copied!');
+          })
+          .catch((error) => {
+            console.error('Failed to copy IP address:', error);
+          });
+      });
+
+      

@@ -2,10 +2,23 @@
 <html lang="en">
 
 <head>
+
+  <!-- SEO -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Anthony Constant">
   <meta name="keywords" content="anthony, constant, computer, science, graduate, systems, networking, cybersecurity, tech, technology">
+   <meta name="author" content="Anthony Constant">
+   <meta name="robots" content="index, follow">
+   <meta property="og:title" content="Anthony Constant | What's my IP">
+   <meta property="og:description" content="Detect your IP address, location, and ISP.">
+   <meta property="og:image" content="https://example.com/images/og-image.jpg">
+   <meta property="og:url" content="https://example.com/">
+   <meta property="og:type" content="website">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Anthony Constant | What's my IP">
+   <meta name="twitter:description" content="Detect your IP address, location, and ISP.">
+   <meta name="twitter:image" content="https://example.com/images/twitter-image.jpg">
 
   <!-- Title -->
   <title>Anthony Constant | What's my IP</title>
@@ -22,46 +35,41 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  
-
 </head>
 
-  <!-- Main Content -->
-
 <body>
-  <div class="container text-center my-5">
-    <span><i class="bi bi-wifi"></i></span><p>Your IP is...</p>
-    <h1 id="ip-address" class="mb-3">Detecting...</h1>
-    <span><i class="bi bi-geo-alt"></i></span><p>Your location is...</p>
-    <h3 id="location" class="mb-3">Detecting...</h3>
-    <span><i class="bi bi-buildings"></i></span><p>Your ISP is...</p>
-    <h3 id="isp" class="mb-5">Detecting...</h3>
-  </div>
+<!-- Main Content -->
+<div class="container text-center my-5">
+  <p><span><i class="bi bi-wifi"></i></span> Your Current IP Address:</p>
+  <h1 id="ip-address" class="mb-4">Detecting...</h1>
+  <button id="copy-ip-button" class="btn btn-primary">Copy IP Address</button>
+  <div style="height: 40px;"></div> <!-- Add a spacer for spacing -->
 
-  <!-- Footer -->
-  <footer class="mt-5 centered-footer">
-    <p class="text-center">
-      <p>
-        Copyright &copy; <script>
-          document.write(new Date().getFullYear());
-        </script> <a href="https://anthonyconstant.co.uk/">Anthony Constant</a>
-      </p>
-    </p>
-  </footer>
+  <p><span><i class="bi bi-geo-alt"></i></span> Your Current Location:</p>
+  <h3 id="location" class="mb-4">Detecting...</h3>
+  <div style="height: 40px;"></div> <!-- Add a spacer for spacing -->
+  
+  <p><span><i class="bi bi-buildings"></i></span> Your Internet Service Provider:</p>
+  <h3 id="isp" class="mb-5">Detecting...</h3>
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="fixed-bottom centered-footer">
+  <p class="text-center">
+    <small>
+      Copyright &copy; <script>document.write(new Date().getFullYear());</script>
+      <a href="https://anthonyconstant.co.uk/">Anthony Constant</a>
+    </small>
+  </p>
+</footer>
 
   <!-- Custom Javascript -->
   <script src="js/script.js"></script>
-
 </body>
 
 </html>
-
-<!--
-	-------- www.anthonyconstant.co.uk --------
-	|                                    |
-	|   </> with <3 by Anthony Constant  |
-	|   You found the secret message!    |
-	|                                    |
-	-------- www.anthonyconstant.co.uk --------
--->
-
