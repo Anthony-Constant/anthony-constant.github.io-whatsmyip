@@ -40,22 +40,23 @@
 <body>
 <!-- Main Content -->
 <div class="container text-center my-5">
+  <div class="header">
+    <h1 class="mb-4">What's My IP?</h1>
+    <p class="lead">Detect your IP address, location, and ISP.</p>
+      <div style="height: 40px;"></div> <!-- Add a spacer for spacing -->
+  </div>
   <p><span><i class="bi bi-wifi"></i></span> Your Current IP Address:</p>
   <h1 id="ip-address" class="mb-4">Detecting...</h1>
-  <button id="copy-ip-button" class="btn btn-primary">Copy IP Address</button>
+  <button id="copy-ip-button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to Copy">Copy IP Address</button>
   <div style="height: 40px;"></div> <!-- Add a spacer for spacing -->
 
-  <p><span><i class="bi bi-geo-alt"></i></span> Your Current Location:</p>
-  <h3 id="location" class="mb-4">Detecting...</h3>
+  <p><span><i class="bi bi-geo-fill"></i></span> Your Current Location:</p>
+  <h3 id="location" class="mb-4"><i class="bi bi-geo-fill"></i> Detecting...</h3>
   <div style="height: 40px;"></div> <!-- Add a spacer for spacing -->
   
-  <p><span><i class="bi bi-buildings"></i></span> Your Internet Service Provider:</p>
-  <h3 id="isp" class="mb-5">Detecting...</h3>
+  <p><span><i class="bi bi-building"></i></span> Your Internet Service Provider:</p>
+  <h3 id="isp" class="mb-5"><i class="bi bi-building"></i> Detecting...</h3>
 </div>
-
-
-
-
 
 
 <!-- Footer -->
