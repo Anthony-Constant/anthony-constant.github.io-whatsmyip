@@ -47,7 +47,7 @@
      });
      
      
-     if (window.VANTA) window.VANTA.DOTS({
+     if (window.VANTA) window.VANTA.GLOBE({
       el: "html",
       mouseControls: true,
       touchControls: true,
