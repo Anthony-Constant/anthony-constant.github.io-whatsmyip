@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Find your current IP address, location, and internet service provider. A tool by Anthony Constant.">
+
+
 <head>
 
 
@@ -23,43 +28,77 @@
 
 <body>
 <!-- Main Content -->
-<div class="container text-center my-5">
-  <div class="header">
-    <h1 class="mb-4">What's My IP?</h1>
-    <p class="lead">Detect your IP address, location, and ISP.</p>
-      <div style="height: 40px;"></div> <!-- Add a spacer for spacing -->
-  </div>
-  <p><span><i class="bi bi-house"></i></span> Your Current IP Address:</p>
-  <h1 id="ip-address" class="mb-4"><i class="bi bi-house"></i> Detecting...</h1>
-  <button id="copy-ip-button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click to Copy">Copy IP Address</button>
-  <div style="height: 40px;"></div> <!-- Add a spacer for spacing -->
+<div id="vanta-background">
+  <div class="container text-center py-5">
+    
+    <div class="header mb-4">
+      <h1 class="mb-3">What's My IP?</h1>
+      <p class="lead">Detect your IP address, location, and ISP.</p>
+    </div>
 
-  <p><span><i class="bi bi-geo-fill"></i></span> Your Current Location:</p>
-  <h3 id="location" class="mb-4"><i class="bi bi-geo-fill"></i> Detecting...</h3>
-  <div style="height: 40px;"></div> <!-- Add a spacer for spacing -->
-  
-  <p><span><i class="bi bi-building"></i></span> Your Internet Service Provider:</p>
-  <h3 id="isp" class="mb-5"><i class="bi bi-building"></i> Detecting...</h3>
+    <section class="info-section mb-4">
+      <p class="section-label"><i class="bi bi-house-door"></i> Your Current IP Address:</p>
+      <h2 id="ip-address" class="fw-bold">Detecting...</h2>
+    </section>
+    
+    <div class="info-section mb-4">
+      <p class="section-label"><i class="bi bi-geo-fill"></i> Your Current Location:</p>
+      <h3 id="location" class="fw-semibold">Detecting...</h3>
+    </div>
+    
+    <div class="info-section mb-4">
+      <p class="section-label"><i class="bi bi-building"></i> Your Internet Service Provider:</p>
+      <h4 id="isp" class="fw-semibold">Detecting...</h4>
+    </div>
+    
+    <div class="d-flex flex-column align-items-center gap-2 mt-3">
+      <!-- Existing Copy Buttons -->
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <button id="copy-ip-button" class="btn btn-primary btn-sm">Copy IP Address</button>
+        <button id="copy-all-button" class="btn btn-primary btn-sm">Copy All</button>
+      </div>
+    
+      <!-- Red VPN Button Below -->
+      <a href="https://refer-nordvpn.com/jTONOfIYEWO" target="_blank" class="btn btn-danger btn-sm fw-bold d-inline-flex align-items-center gap-2 px-4" id="hide-ip-btn">
+        <i class="bi bi-shield-fill"></i>
+        HIDE MY IP ADDRESS NOW
+      </a>
+    </div>
+    
+<!-- Additional Tools Section -->
+<div class="tools-section mt-5 p-4 rounded shadow-sm">
+  <h4 class="mb-3 text-white fw-semibold text-center">Additional Tools & Security Insights</h4>
+  <div class="d-flex flex-wrap justify-content-center gap-3">
+    <a href="https://anthonyconstant.co.uk/" class="btn btn-primary btn-sm">Official Website</a>
+    <a href="https://spg.anthonyconstant.co.uk/" class="btn btn-primary btn-sm">Secure Password Generator</a>
+    <a href="https://interviewkit.anthonyconstant.co.uk/" class="btn btn-primary btn-sm">Interview Kit</a>
+    <a href="https://universitykit.anthonyconstant.co.uk/" class="btn btn-primary btn-sm">University Kit</a>
+    <a href="https://anthonyconstant.co.uk/blog" class="btn btn-primary btn-sm">Blog</a>
+    <a href="https://anthonyconstant.co.uk/contact" class="btn btn-primary btn-sm">Contact</a>
+  </div>
 </div>
 
+    
+    </div>
+  </div>
+</div>
 
 <!-- Footer -->
-<footer class="fixed-bottom centered-footer">
-  <p class="text-center">
-    <small>
-      <p>Copyright &copy; Anthony Constant 2025</p>
-
-    </small>
+<footer class="text-center py-4">
+  <p>© 2025 Anthony Constant. All rights reserved.</p>
+  <p>
+    <a href="https://www.linkedin.com/company/anthony-constant" target="_blank" style="color:#60a5fa;">LinkedIn</a> |
+    <a href="https://uk.trustpilot.com/review/anthonyconstant.co.uk" target="_blank" style="color:#60a5fa;">Trustpilot Reviews</a>
   </p>
 </footer>
+
+
 
   <!-- Custom Javascript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
   <script src="js/script.js"></script>
-  
-  <!-- The end -->
-
+</body>
 </html>
 
 <!--
