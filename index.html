@@ -33,6 +33,7 @@
       <img src="images/Logo-01.png" alt="Anthony Constant Logo" class="logo-img">
     </a>
   </div>
+  
 <!-- Main Content -->
 <div id="vanta-background">
   <div class="container text-center py-5">
@@ -42,10 +43,11 @@
       <p class="lead">Detect your IP address, location, and ISP.</p>
     </div>
 
-    <section class="info-section mb-4">
-      <p class="section-label"><i class="bi bi-house-door"></i> Your Current IP Address:</p>
-      <h2 id="ip-address" class="fw-bold">Detecting...</h2>
-    </section>
+ <section class="info-section mb-4">
+  <p class="section-label"><i class="bi bi-house-door-fill"></i> IP Address</p>
+  <h2 id="ip-address" class="fw-bold">Detecting...</h2>
+</section>
+
     
     <div class="info-section mb-4">
       <p class="section-label"><i class="bi bi-geo-fill"></i> Your Current Location:</p>
@@ -62,14 +64,119 @@
       <div class="d-flex justify-content-center gap-3 flex-wrap">
         <button id="copy-ip-button" class="btn btn-primary btn-sm">Copy IP Address</button>
         <button id="copy-all-button" class="btn btn-primary btn-sm">Copy All</button>
+        <button class="btn btn-primary btn-sm" onclick="location.reload()">Refresh Info</button>
       </div>
     
       <!-- Red VPN Button Below -->
-      <a href="https://refer-nordvpn.com/jTONOfIYEWO" target="_blank" class="btn btn-danger btn-sm fw-bold d-inline-flex align-items-center gap-2 px-4" id="hide-ip-btn">
-        <i class="bi bi-shield-fill"></i>
-        HIDE MY IP ADDRESS NOW
-      </a>
+      <a href="https://refer-nordvpn.com/jTONOfIYEWO"
+      target="_blank"
+      class="btn btn-danger btn-sm fw-bold d-inline-flex align-items-center gap-2 px-4 pulse"
+      id="hide-ip-btn">
+     <i class="bi bi-shield-fill"></i>
+     HIDE MY IP ADDRESS NOW
+   </a>
+   
+
+<!-- What Does Your IP Address Reveal? -->
+<section class="password-strength-section container">
+  <h2 class="password-strength-title">What Does Your IP Address Reveal?</h2>
+
+  <div class="password-strength-grid">
+    <div class="strength-box">
+      <h3 class="box-title">Your Location</h3>
+      <p>IP addresses can expose your city, region, and even time zone—often with surprising accuracy.</p>
     </div>
+
+    <div class="strength-box">
+      <h3 class="box-title">Your ISP</h3>
+      <p>It reveals your internet service provider, which helps websites identify your connection.</p>
+    </div>
+
+    <div class="strength-box">
+      <h3 class="box-title">Your Online Activity</h3>
+      <p>Websites and services can use your IP for tracking, targeted ads, and geo-blocking.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQs Section -->
+<section class="faq-section container my-5">
+  <h2 class="faq-title">IP Address FAQs</h2>
+  <p class="faq-subtitle">Got questions about your IP address? We've got you covered.</p>
+
+  <div class="faq-container">
+
+    <div class="faq">
+      <button class="faq-question">What is an IP address?</button>
+      <div class="faq-answer">
+        <p>An IP address (Internet Protocol address) is a unique identifier assigned to your device when you connect to the internet. It allows websites and services to communicate with your device.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">Can someone track my exact location using my IP?</button>
+      <div class="faq-answer">
+        <p>No, your IP address can reveal your approximate location (city or region), but it cannot pinpoint your exact street address or identity without help from your ISP or legal authorities.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">How can I hide my IP address?</button>
+      <div class="faq-answer">
+        <p>You can use a VPN (Virtual Private Network), proxy server, or the Tor browser to mask your IP address and improve your online privacy.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">Does my IP address change?</button>
+      <div class="faq-answer">
+        <p>If your ISP uses dynamic IPs (which most do), your IP address can change over time or when you reconnect. A static IP remains fixed and requires specific setup or purchase.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">What's the difference between IPv4 and IPv6?</button>
+      <div class="faq-answer">
+        <p>IPv4 addresses look like 192.0.2.1 and are the older, more common format. IPv6 addresses, like 2001:0db8::1, were created to handle the growing number of internet-connected devices.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="faq-question">Why do websites care about my IP address?</button>
+      <div class="faq-answer">
+        <p>Websites use your IP address to deliver content, tailor experiences to your region, detect suspicious activity, serve ads, and gather analytics about visitors.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Related Blog Posts Section -->
+<section class="related-blogs container my-5">
+  <h2 class="blogs-title">Related Blog Posts</h2>
+
+  <div class="blogs-grid">
+    <a href="https://anthonyconstant.co.uk/blog/f/computer-systems-security-fundamentals?blogcategory=Cyber+Security"
+       target="_blank" class="blog-link">
+      Cybersecurity Fundamentals: Part 1
+    </a>
+    
+    <a href="https://anthonyconstant.co.uk/blog/f/computer-systems-security-fundamentals---part-2?blogcategory=Cyber+Security"
+       target="_blank" class="blog-link">
+      Cybersecurity Fundamentals: Part 2
+    </a>
+    
+    <a href="https://anthonyconstant.co.uk/blog/f/introduction-to-cryptography?blogcategory=Cyber+Security"
+       target="_blank" class="blog-link">
+      Introduction to Cryptography
+    </a>
+  </div>
+</section>
+
+
     
 <!-- Additional Tools Section -->
 <div class="tools-section mt-5 p-4 rounded shadow-sm">
@@ -89,15 +196,26 @@
   </div>
 </div>
 
-<!-- Footer -->
-<footer class="text-center py-4">
-  <p>© 2025 Anthony Constant. All rights reserved.</p>
-  <p>
-    <a href="https://www.linkedin.com/company/anthony-constant" target="_blank" style="color:#60a5fa;">LinkedIn</a> |
-    <a href="https://uk.trustpilot.com/review/anthonyconstant.co.uk" target="_blank" style="color:#60a5fa;">Trustpilot Reviews</a>
-  </p>
-</footer>
+<footer class="bg-gray-800 text-white py-10 px-6 text-center">
+  <div class="max-w-3xl mx-auto space-y-4">
 
+    <p class="text-base font-medium">
+      © 2025 Anthony Constant. All rights reserved.
+    </p>
+
+    <div class="flex justify-center space-x-6 text-sm">
+      <a href="https://www.linkedin.com/company/anthony-constant/" target="_blank" class="hover:text-blue-400 transition">
+        🔗 LinkedIn
+      </a>
+      <a href="https://uk.trustpilot.com/review/anthonyconstant.co.uk" target="_blank" class="hover:text-green-400 transition">
+        ⭐ Trustpilot Reviews
+      </a>
+      <a href="mailto:hello@anthonyconstant.co.uk" class="hover:text-yellow-400 transition">
+        📩 Contact Me
+      </a>
+    </div>
+  </div>
+</footer>
 
 
   <!-- Custom Javascript -->
