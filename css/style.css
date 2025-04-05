@@ -11,26 +11,31 @@ html, body {
 }
 
 #vanta-background {
-  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-  background-size: 200% 200%;
-  animation: gradientBG 20s ease infinite;
+  background-color: #101820;
   min-height: 100vh;
   width: 100%;
-  position: relative;
-  z-index: 0;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
+
+
 
 
 
 .container {
-  padding: 2rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  color: white;
   max-width: 800px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
 }
+
 
 .container h1,
 .container h3,

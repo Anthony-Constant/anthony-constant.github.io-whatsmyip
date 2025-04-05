@@ -84,19 +84,7 @@ faqs.forEach(faq => {
 
 
      
-     if (window.VANTA) window.VANTA.GLOBE({
-  el: "#vanta-background",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.0,
-  scaleMobile: 1.0,
-  color: 0x3fddff,
-  color2: 0xff8820,
-  backgroundColor: 0x101820
-});
+
 
 
       
