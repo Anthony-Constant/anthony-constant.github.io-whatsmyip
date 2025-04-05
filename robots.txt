@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://whatsmyip.anthonyconstant.co.uk/sitemap.xml

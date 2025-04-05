@@ -82,6 +82,29 @@ faqs.forEach(faq => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const taglines = [
+    "We never store your IP address — client-side only.",
+    "Instant IP address lookup, 100% private.",
+    "Your location and ISP — no tracking, no storage.",
+    "This tool runs entirely in your browser.",
+    "Your IP, your data — not ours."
+  ];
+
+  const taglineElement = document.getElementById("tagline");
+  let index = 0;
+
+  function rotateTagline() {
+    taglineElement.classList.add("fade");
+    setTimeout(() => {
+      index = (index + 1) % taglines.length;
+      taglineElement.textContent = taglines[index];
+      taglineElement.classList.remove("fade");
+    }, 600);
+  }
+
+  setInterval(rotateTagline, 4000);
+});
 
      
 
